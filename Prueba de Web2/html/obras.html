@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Obras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/obras.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body class="obras">  
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success" style="box-shadow: 0px 5px 20px rgb(0, 88, 15);">
+        <div class="container-fluid">
+            <a href="hom.html"><img src="../imagen/GRUPO CERO.png" alt="Grupo Cero!" class="navbar-brand icon-glow"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link texto" href="artistas.html">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link texto" href="contacto.html">Contactenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex w-50">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Contenido principal -->
+    <div style="height:97px;"></div>
+    <nav class="navbar navbar-light" style="line-height: 50%;">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <span class="ms-2 h4 mb-2">Gestión de Obras</span>
+            </div>
+            <button id="btnAgregarObra" class="btn btn-primary d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                Agregar Obra
+            </button>
+        </div>
+    </nav>
+
+        <!-- Formulario para agregar nueva obra -->
+    <main class="container py-4">
+        <div id="formularioObra" class="card shadow-sm mb-4" style="display: none;">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-4">Nueva Obra</h2>
+                <form id="formObra">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre de la Obra</label>
+                        <input type="text" class="form-control" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Ubicación</label>
+                        <input type="text" class="form-control" name="ubicacion" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Descripción</label>
+                        <textarea class="form-control" name="descripcion" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha de Inicio</label>
+                        <input type="date" class="form-control" name="fechaInicio" required>
+                    </div>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-light me-2" id="btnCancelar">Cancelar</button>
+                        <button type="submit" class="btn btn-success">Guardar Obra</button>
+                    </div>
+                </form>
+        </div>
+        </div>
+        <!-- Lista de obras -->
+        <div id="listaObras" class="row g-4">
+            <div class="col-12 text-center py-5" id="mensajeVacio">
+                <p class="text-muted h5">No hay obras registradas. ¡Agrega una nueva obra!</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/obras_script.js"></script>
+</body>
+</html>

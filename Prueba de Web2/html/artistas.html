@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO CERO! || Artistas!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../imagen/ico.ico">
+
+    <!--===============================================================================================-->
+    <!-------------------------------------------CSS!!!!------------------------------------------------->
+		<link rel="stylesheet" type="text/css" href="../css/artistas_style.css">
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+	<!--===============================================================================================-->
+
+</head>
+<body class="artistas">
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success" style="box-shadow: 0px 5px 20px rgb(0, 88, 15);">
+        <div class="container-fluid">
+            <a href="hom.html"><img src="../imagen/GRUPO CERO.png" alt="Grupo Cero!" class="navbar-brand icon-glow"></a>
+            <a href="obras.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                <a class="nav-link texto" href="artistas.html">Artistas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link texto" href="contacto.html">Contactenos</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                <a class="nav-link disabled texto" href="#" tabindex="-1" aria-disabled="true">[Fuera de servicio]]</a>
+                </li>
+                -->
+            </ul>
+            <form class="d-flex w-50">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <div style="height:97px;"></div>
+    <div class="container py-5">
+        <div class="position-relative">
+            <input type="text" id="searchInput" class="form-control form-control-lg ps-5" placeholder="Buscar por nombre del artista o tipo de arte...">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="position-absolute text-muted" style="left: 15px; top: 50%; transform: translateY(-50%)">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Artists Grid -->
+    <div class="container pb-5">
+        <div class="row g-4" id="artistsGrid">
+            <!-- Artists will be dynamically inserted here -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/artista_script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+.texto{
+    font-size: 20px;
+  }
+
+.btn-custom{
+  color:#fff;
+  background-color:#ffae00;
+  border-color:#ffae00;
+}
+
+.btn-custom:hover{
+  color:#fff;
+  background-color:#f5ff6a;
+  border-color:#f5ff6a;
+}
+
+
+.btn-check:focus+.btn-custom,.btn-custom:focus{color:#fff;background-color:#0b5ed7;border-color:#0a58ca;box-shadow:0 0 0 .25rem rgba(49,132,253,.5)}.btn-check:active+.btn-custom,.btn-check:checked+.btn-custom,.btn-custom.active,.btn-custom:active,.show>.btn-custom.dropdown-toggle{color:#fff;background-color:#0a58ca;border-color:#0a53be}.btn-check:active+.btn-custom:focus,.btn-check:checked+.btn-custom:focus,.btn-custom.active:focus,.btn-custom:active:focus,.show>.btn-custom.dropdown-toggle:focus{box-shadow:0 0 0 .25rem rgba(49,132,253,.5)}.btn-custom.disabled,.btn-custom:disabled{color:#fff;background-color:#0d6efd;border-color:#0d6efd}
+
+.nav-link.active,.navbar-nav .show>.nav-link{color:var(--bs-navbar-active-color)}
+.nav-link{flex-basis:0;flex-grow:1;text-align:center}
+
+.icon-glow:hover{
+  border-color:#f5ff6a;
+  box-shadow: #0a53be;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+
+body.artistas{
+  background-image: url('../imagen/artistas/Fondo_artistas.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body.hom{
+  background-image: url('../imagen/home/Fondo_home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body.contacto{
+  background-image: url('../imagen/fondooleo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+body.obras{
+  background-image: url('../imagen/artistas/Fondo_artistas.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}

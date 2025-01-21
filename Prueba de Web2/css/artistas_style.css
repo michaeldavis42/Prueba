@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(249, 250, 251);
+}
+
+.artist-image {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: #10bf56;
+    border-color: #10bf56;
+}
+
+.btn-primary:hover {
+    background-color: #10bf56;
+    border-color: #10bf56;
+}
+
+.text-primary {
+    color: #10bf56 !important;
+}
