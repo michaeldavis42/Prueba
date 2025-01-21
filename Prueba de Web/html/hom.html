@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO CERO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="icon" href="../imagen/ico.ico">
+    <meta name="theme-color" content="#7950b0">
+
+    <!--===============================================================================================-->
+    <!-------------------------------------------CSS!!!!------------------------------------------------->
+		<link rel="stylesheet" type="text/css" href="../css/pagina_principal.css">
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+	  <!--===============================================================================================-->
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success" style="box-shadow: 0px 5px 20px rgb(0, 88, 15);">
+        <div class="container-fluid">
+          <a href="#"><img src="../imagen/GRUPO CERO.png" alt="Grupo Cero!" class="navbar-brand icon-glow"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link texto" href="artistas.html">Artistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link texto" href="contacto.html">Contactenos</a>
+              </li>
+              <!--
+                <li class="nav-item">
+                <a class="nav-link disabled texto" href="#" tabindex="-1" aria-disabled="true">[Fuera de servicio]]</a>
+              </li>
+              -->
+            </ul>
+            <form class="d-flex w-50">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active carousel-image">
+        <img src="../imagen/home/prueba1.png" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Pintura de oleo</h1>
+            <p>Averigua sobre las ultimas pinturas hechas aqui!</p>
+            <p><a class="btn btn-lg btn-custom" href="pinturas.html">Ir ahi!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../imagen/home/tejido.png" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Tejidos</h1>
+            <p>Investigue sobre los tejidos mas impresionantes de la pagina</p>
+            <p><a class="btn btn-lg btn-custom" href="#">Ir ahi!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../imagen/home/escultura_11zon.png" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Esculturas</h1>
+            <p>Las mejores esculturas que puedas encontrar </p>
+            <p><a class="btn btn-lg btn-custom" href="#">Ir ahi!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../imagen/home/orfebreria.png" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Orfebrerias</h1>
+            <p>Observe las ultimas creaciones en orfebreria de nuestros artistas!</p>
+            <p><a class="btn btn-lg btn-custom" href="#">Revisar galeria</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container marketing">
+    <section>
+    <h2 class="featurette-heading center">Conoce a nuestros <span class="text-primary">Artistas!</span></h2>
+    </section>
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="../imagen/artistas/Maria_pfp.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+        <h2>María</h2>
+        <p>Expresar emociones y narrativas a través de colores y texturas, conectando con el público mediante obras únicas.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="../imagen/artistas/Carlos_pfp.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+        <h2>Carlos</h2>
+        <p>Transformar ideas en arte tangible que inspire y perdure en el tiempo.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="../imagen/artistas/Roberto_pfp.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+        <h2>Roberto</h2>
+        <p>Preservar las técnicas ancestrales mientras se innova en el diseño textil.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="../imagen/artistas/Ana_pfp.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+        <h2>Ana</h2>
+        <p>Resaltar la belleza y el valor cultural a través de piezas únicas de joyería artesanal.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+  </div>
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  <style>
+    body {
+      background-image: url('../imagen/home/Fondo_home.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+  </style>
+</html>

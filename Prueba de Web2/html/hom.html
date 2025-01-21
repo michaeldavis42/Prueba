@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO CERO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="icon" href="../imagen/ico.ico">
+    <meta name="theme-color" content="#7950b0">
+
+    <!--===============================================================================================-->
+    <!-------------------------------------------CSS!!!!------------------------------------------------->
+		<link rel="stylesheet" type="text/css" href="../css/pagina_principal.css">
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+	  <!--===============================================================================================-->
+
+  </head>
+  <body class="hom">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success" style="box-shadow: 0px 5px 20px rgb(0, 88, 15);">
+        <div class="container-fluid">
+          <a href="#"><img src="../imagen/GRUPO CERO.png" alt="Grupo Cero!" class="navbar-brand icon-glow"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link texto" href="artistas.html">Artistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link texto" href="contacto.html">Contactenos</a>
+              </li>
+            </ul>
+            <form class="d-flex w-50">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active carousel-image">
+        <img src="../imagen/home/prueba1.png" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Pintura de oleo</h1>
+            <p>Averigua sobre las ultimas pinturas hechas aqui!</p>
+            <p><a class="btn btn-lg btn-custom" href="obras.html">Ir ahi!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../imagen/home/tejido.png" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Tejidos</h1>
+            <p>Investigue sobre los tejidos mas impresionantes de la pagina</p>
+            <p><a class="btn btn-lg btn-custom" href="obras.html">Ir ahi!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../imagen/home/escultura_11zon.png" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Esculturas</h1>
+            <p>Las mejores esculturas que puedas encontrar </p>
+            <p><a class="btn btn-lg btn-custom" href="obras.html">Ir ahi!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../imagen/home/orfebreria.png" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Orfebrerias</h1>
+            <p>Observe las ultimas creaciones en orfebreria de nuestros artistas!</p>
+            <p><a class="btn btn-lg btn-custom" href="obras.html">Ir ahi!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container marketing">
+    <section>
+    <h2 class="featurette-heading center fw-bold">Conoce a nuestros <span class="text-primary">Artistas!</span></h2>
+    </section>
+    <hr class="featurette-divider">
+
+    <div id="mainView" class="min-vh-100 gradient-background">
+      <div class="container py-5">
+          <div class="row g-4">
+              <!-- María -->
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="text-center p-4">
+                      <img src="../imagen/artistas/Maria_pfp.jpg" alt="María" class="rounded-circle artist-image mb-3">
+                      <h2 class="h4 fw-bold">María</h2>
+                      <p class="text-muted">Expresar emociones y narrativas a través de colores y texturas, conectando con el público mediante obras únicas.</p>
+                      <button class="btn btn-success" onclick="showArtistDetail('maria')">Ver detalles »</button>
+                  </div>
+              </div>
+
+              <!-- Carlos -->
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="text-center p-4">
+                      <img src="../imagen/artistas/Carlos_pfp.jpg" alt="Carlos" class="rounded-circle artist-image mb-3">
+                      <h2 class="h4 fw-bold">Carlos</h2>
+                      <p class="text-muted">Transformar ideas en arte tangible que inspire y perdure en el tiempo.</p>
+                      <button class="btn btn-success" onclick="showArtistDetail('carlos')">Ver detalles »</button>
+                  </div>
+              </div>
+
+              <!-- Roberto -->
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="text-center p-4">
+                      <img src="../imagen/artistas/Roberto_pfp.jpg" alt="Roberto" class="rounded-circle artist-image mb-3">
+                      <h2 class="h4 fw-bold">Roberto</h2>
+                      <p class="text-muted">Preservar las técnicas ancestrales mientras se innova en el diseño textil.</p>
+                      <button class="btn btn-success" onclick="showArtistDetail('roberto')">Ver detalles »</button>
+                  </div>
+              </div>
+
+              <!-- Ana -->
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="text-center p-4">
+                      <img src="../imagen/artistas/Ana_pfp.jpg" alt="Ana" class="rounded-circle artist-image mb-3">
+                      <h2 class="h4 fw-bold">Ana</h2>
+                      <p class="text-muted">Resaltar la belleza y el valor cultural a través de piezas únicas de joyería artesanal.</p>
+                      <button class="btn btn-success" onclick="showArtistDetail('ana')">Ver detalles »</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Detalles de María -->
+  <div id="maria-detail" class="artist-detail min-vh-100 gradient-background d-none">
+      <div class="container py-5">
+          <button class="btn btn-link text-success mb-4 ps-0" onclick="showMainView()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 19-7-7 7-7"/>
+                  <path d="M19 12H5"/>
+              </svg>
+              Volver
+          </button>
+          <div class="row g-4">
+              <div class="col-md-6">
+                  <img src="../imagen/artistas/Maria.jpg" alt="María" class="img-fluid rounded shadow-sm mb-4">
+                  <h1 class="h2 fw-bold">María</h1>
+                  <p class="text-muted">Expresar emociones y narrativas a través de colores y texturas, conectando con el público mediante obras únicas.</p>
+                  <div class="mb-3">
+                      <h3 class="h5 fw-bold">Especialidad</h3>
+                      <p class="text-muted">Arte abstracto y pintura expresiva</p>
+                  </div>
+                  <div>
+                      <h3 class="h5 fw-bold">Experiencia</h3>
+                      <p class="text-muted">12 años de experiencia en arte contemporáneo</p>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <h2 class="h3 fw-bold mb-4">Portafolio</h2>
+                  <div class="row g-3">
+                      <div class="col-12">
+                          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5" alt="Obra de María" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-12">
+                          <img src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8" alt="Obra de María" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-12">
+                          <img src="../imagen/fc98d416-33b6-4c93-bfde-92f366120fba.jpeg" alt="Obra de María" class="img-fluid rounded shadow-sm">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Detalles de Carlos -->
+  <div id="carlos-detail" class="artist-detail min-vh-100 gradient-background d-none">
+      <div class="container py-5">
+          <button class="btn btn-link text-success mb-4 ps-0" onclick="showMainView()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 19-7-7 7-7"/>
+                  <path d="M19 12H5"/>
+              </svg>
+              Volver
+          </button>
+          <div class="row g-4">
+              <div class="col-md-6">
+                  <img src="../imagen/artistas/Carlos.jpg" alt="Carlos" class="img-fluid rounded shadow-sm mb-4">
+                  <h1 class="h2 fw-bold">Carlos</h1>
+                  <p class="text-muted">Transformar ideas en arte tangible que inspire y perdure en el tiempo.</p>
+                  <div class="mb-3">
+                      <h3 class="h5 fw-bold">Especialidad</h3>
+                      <p class="text-muted">Escultura contemporánea</p>
+                  </div>
+                  <div>
+                      <h3 class="h5 fw-bold">Experiencia</h3>
+                      <p class="text-muted">15 años creando obras monumentales</p>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <h2 class="h3 fw-bold mb-4">Portafolio</h2>
+                  <div class="row g-3">
+                      <div class="col-12">
+                          <img src="../imagen/artistas/Obras/escultura.jpg">
+                      </div>
+                      <div class="col-12">
+                          <img src="../imagen/artistas/Obras/artesanal.jpg" alt="Obra de Carlos" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-12">
+                          <img src="../imagen/artistas/Obras/esculturap.jpg" alt="Obra de Carlos" class="img-fluid rounded shadow-sm">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Detalles de Roberto -->
+  <div id="roberto-detail" class="artist-detail min-vh-100 gradient-background d-none">
+      <div class="container py-5">
+          <button class="btn btn-link text-success mb-4 ps-0" onclick="showMainView()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 19-7-7 7-7"/>
+                  <path d="M19 12H5"/>
+              </svg>
+              Volver
+          </button>
+          <div class="row g-4">
+              <div class="col-md-6">
+                  <img src="../imagen/artistas/Roberto.jpg" alt="Roberto" class="img-fluid rounded shadow-sm mb-4">
+                  <h1 class="h2 fw-bold">Roberto</h1>
+                  <p class="text-muted">Preservar las técnicas ancestrales mientras se innova en el diseño textil.</p>
+                  <div class="mb-3">
+                      <h3 class="h5 fw-bold">Especialidad</h3>
+                      <p class="text-muted">Diseño textil y técnicas tradicionales</p>
+                  </div>
+                  <div>
+                      <h3 class="h5 fw-bold">Experiencia</h3>
+                      <p class="text-muted">10 años fusionando lo tradicional con lo contemporáneo</p>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <h2 class="h3 fw-bold mb-4">Portafolio</h2>
+                  <div class="row g-3">
+                      <div class="col-12">
+                          <img src="../imagen/artistas/Obras/tejido.jpg" alt="Obra de Roberto" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-12">
+                          <img src="../imagen/artistas/Obras/tejido 2.jpg" alt="Obra de Roberto" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-12">
+                          <img src="../imagen/artistas/Obras/tejido 3.jpg" alt="Obra de Roberto" class="img-fluid rounded shadow-sm">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Detalles de Ana -->
+  <div id="ana-detail" class="artist-detail min-vh-100 gradient-background d-none">
+      <div class="container py-5">
+          <button class="btn btn-link text-success mb-4 ps-0" onclick="showMainView()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 19-7-7 7-7"/>
+                  <path d="M19 12H5"/>
+              </svg>
+              Volver
+          </button>
+          <div class="row g-4">
+              <div class="col-md-6">
+                  <img src="../imagen/artistas/Ana.jpg" alt="Ana" class="img-fluid rounded shadow-sm mb-4">
+                  <h1 class="h2 fw-bold">Ana</h1>
+                  <p class="text-muted">Creaciones de joyería artesanal.</p>
+                  <div class="mb-3">
+                      <h3 class="h5 fw-bold">Especialidad</h3>
+                      <p class="text-muted">Aretes y Brazaletes</p>
+                  </div>
+                  <div>
+                      <h3 class="h5 fw-bold">Experiencia</h3>
+                      <p class="text-muted">48 años de experiencia en orfebreria</p>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <h2 class="h3 fw-bold mb-4">Portafolio</h2>
+                  <div class="row g-3">
+                      <div class="col-12">
+                          <img src="../imagen/artistas/Obras/orfebreria.jpg" alt="Obra de Ana" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-12">
+                          <img src="../imagen/artistas/Obras/orfebreria 2.jpg" alt="Obra de Ana" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-12">
+                          <img src="../imagen/artistas/Obras/orfebreria 3.jpg" alt="Obra de Ana" class="img-fluid rounded shadow-sm">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</span href="hom" class="text-align:center">En Grupo Cero, cada obra de arte es una exploración única de la creatividad humana. 
+                       Desde el óleo que capta la esencia misma de la vida con cada pincelada hasta la escultura que plasma emociones a través de la materia, cada pieza es una manifestación del espíritu artístico que nos mueve. 
+                       La tradición del tejido y la metalurgia nos conecta con las raíces humanas más profundas, fusionando lo antiguo con lo nuevo en creaciones que resuenan en el presente</span>
+  
+    <hr class="featurette-divider">
+  </div>
+  <footer class="container">
+    <p class="float-end"><a href="#">Regresar Arriba</a></p>
+    <p>&copy; 2017–2025 Grupo Cero &middot; <a href="#">Política de privacidad</a> &middot; <a href="#">Términos de usos</a></p>
+  </footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+  function showArtistDetail(artist) {
+      document.getElementById('mainView').classList.add('d-none');
+      document.getElementById(`${artist}-detail`).classList.remove('d-none');
+  }
+
+  function showMainView() {
+      document.getElementById('mainView').classList.remove('d-none');
+      const details = document.querySelectorAll('.artist-detail');
+      details.forEach(detail => {
+          detail.classList.add('d-none');
+      });
+  }
+</script>
+  </body>
+</html>
